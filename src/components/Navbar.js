@@ -10,6 +10,15 @@ export default function Navbar() {
   //https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products
   const [product, setProduct] = useState([]);
   const [search, setSearch] = useState("");
+  const getdata = JSON.parse(localStorage.getItem("cartArray"));
+
+  const [cartval, setCartVal] = useState(() => {
+    if (getdata === null) {
+      return 0;
+    } else {
+      return getdata.length;
+    }
+  });
   //  const {userlogin, setUserlogin} = useContext(LoginContext)
   //   console.log(userlogin);
 
@@ -53,7 +62,7 @@ export default function Navbar() {
         </div>
         <NavLink to="/cart" className="cart">
           <div className="profileAndCart">
-            <h3>Cart</h3>
+            <h3>Cart {cartval} item</h3>
           </div>
           {/* <BsCart2 className="cart-trolly" /> */}
         </NavLink>
