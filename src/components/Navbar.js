@@ -48,7 +48,12 @@ export default function Navbar() {
           />
         </div>
         <div className="downloadContainer">
-          <h3>Download App</h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=HP&pow_distinct_id=185e8757c9432d-00abeba56ad479-26021051-100200-185e8757c9539c&pli=1"
+            target="_blank"
+          >
+            <h3>Download App</h3>
+          </a>
         </div>
         <div className="becomeSupplierContaine">
           <h3>Become a supplier</h3>
