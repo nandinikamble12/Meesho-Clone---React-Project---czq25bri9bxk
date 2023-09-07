@@ -19,26 +19,49 @@ const Items = () => {
     <div className='mainform'>
       <div >
       <form onSubmit={submit}>
-        <ul className='mainform2'>
-            <li><label>Enter Name :</label></li>
-            <li><input type="text" value = "name" /> </li>
-            <li><label>Phone no</label></li>
-            <li><input type= "number" value = "number"/></li>
-            <li><label>Address :</label></li>
-            <li><textarea placeholder='Enter address' value = {address} onChange={handleChange} ></textarea></li>
-            <li><label>Payment Method</label></li>
-            <li><select value = "payment">
+      <div className='mainform2'>
+          <div className='mainform11'>
+             <div>
+             <label>Enter Name :</label>
+            
+            <input type="text"  /> 
+             </div>
+             <br />
+             <br />
+             <div>
+             <label>Phone num:</label>
+            <input type= "number" />
+             </div>
+             <br />
+             <br />
+              <div>
+              <label>Address :</label>
+            <textarea placeholder='Enter address' rows={9} cols={44} value = {address} onChange={handleChange} ></textarea>
+              </div>
+              <br />
+             <br />
+            </div>
+             <div className='mainform12'>
+            <div>
+            <label>Payment Method</label>
+            <select >
                 <option>Google Pay</option>
                 <option>PhonePe</option>
                 <option>Cash on Delivery</option>
-            </select></li>
-            
-            <li>
+            </select>
+            <h2 className='order'>Reselling the Order?</h2>
+             <label>Yes</label><input type="checkbox" name="yes" id="" />
+             <label>No</label><input type="checkbox" name="No" id="" />
+            </div>
                 <NavLink to="/checkout" className="cart">
                 <div><button className='placebtn'>Place order</button></div>
                 </NavLink>
-            </li>
-        </ul>   
+                <div className='imgfo'>
+
+                </div>
+                </div>
+                
+        </div>  
       </form>
       </div>
       </div>
