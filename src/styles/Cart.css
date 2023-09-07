@@ -31,16 +31,16 @@
        
 }     
 .btncheck{
-       border: 1px solid blacks;
-       border-radius: 10px;
-       padding: 6px;
-        background-color: white; 
-       color: #0d0b0b;
-       width: 90px;
-       height: 30px;
+      
+       border: none;
+       padding: 9px;
+       background-color: rgb(225, 36, 99);
+       color: white;
+       width: 9rem;
+       height: 2.3rem;
        font-weight: 40px;
        margin-top: 20px;
-       margin-left: 625px;
+       margin-left: 43rem;
        margin-bottom: 50px;
       
 }   
@@ -48,3 +48,25 @@
 .total{
        opacity: 0;
 }
+
+@media only screen and (max-width: 768px) {
+       .cartparent {
+           gap: 10px;
+       }
+   
+       .btncheck {
+           margin-left: auto;
+           margin-right: auto;
+       }
+       
+       .btncheck,
+       .maindetail {
+           width: 100%;
+           text-align: center;
+       }
+       
+       .total,
+       .carttotal {
+           opacity: 1;
+       }
+   }
